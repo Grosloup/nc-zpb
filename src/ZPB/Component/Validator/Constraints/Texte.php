@@ -18,7 +18,7 @@
       (__<  |mm_|mm_|  |mm_|mm_|
 */
 
-namespace ZPB\AdminBundle\Validator\Constraints;
+namespace ZPB\Component\Validator\Constraints;
 
 
 use Symfony\Component\Validator\Constraint;
