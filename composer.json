@@ -1,8 +1,12 @@
 {
-  "name": "weaverryan/derp-dangerzone",
+  "name": "Grosloup/nc-zpb",
+  "homepage": "https://github.com/Grosloup/nc-zpb",
+  "require": {
+    "php": ">=5.4.0"
+  },
   "autoload": {
-    "psr-0" : {
-      "Weaverryan\\DangerZone" : "src"
+    "psr-4" : {
+      "ZPB\\" : "src/ZPB/"
     }
   }
 }
