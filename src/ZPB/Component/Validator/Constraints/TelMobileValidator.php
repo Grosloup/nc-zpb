@@ -27,7 +27,7 @@ use Symfony\Component\Validator\Exception\UnexpectedTypeException;
 class TelMobileValidator  extends ConstraintValidator
 {
 
-    protected $pattern = '/^((\+|00)33\s?|0)[679](\s?\d{2}){4}$/';
+    protected $pattern = '/^(((\+|00)33\s?(\(?0\)?)?)|0)[679](\s?\d{2}){4}$/';
 
     public function validate($value, Constraint $constraint)
     {

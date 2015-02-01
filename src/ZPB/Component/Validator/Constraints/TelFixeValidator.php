@@ -26,7 +26,7 @@ use Symfony\Component\Validator\Exception\UnexpectedTypeException;
 
 class TelFixeValidator extends ConstraintValidator
 {
-    protected $pattern = '/^((\+|00)33\s?|0)[1-5](\s?\d{2}){4}$/';
+    protected $pattern = '/^(((\+|00)33\s?(\(?0\)?)?)|0)[1-5](\s?\d{2}){4}$/';
 
     public function validate($value, Constraint $constraint)
     {
