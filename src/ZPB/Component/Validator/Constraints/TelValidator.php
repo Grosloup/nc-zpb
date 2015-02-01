@@ -30,7 +30,7 @@ class TelValidator extends ConstraintValidator
 
     public function validate($value, Constraint $constraint)
     {
-        if (!$constraint instanceof PersonName) {
+        if (!$constraint instanceof Tel) {
             throw new UnexpectedTypeException($constraint, __NAMESPACE__.'\Tel');
         }
 

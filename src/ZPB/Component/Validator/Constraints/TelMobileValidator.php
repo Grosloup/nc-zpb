@@ -31,7 +31,7 @@ class TelMobileValidator  extends ConstraintValidator
 
     public function validate($value, Constraint $constraint)
     {
-        if (!$constraint instanceof PersonName) {
+        if (!$constraint instanceof TelMobile) {
             throw new UnexpectedTypeException($constraint, __NAMESPACE__.'\TelMobile');
         }
 

@@ -30,7 +30,7 @@ class TailleValidator extends ConstraintValidator
 
     public function validate($value, Constraint $constraint)
     {
-        if (!$constraint instanceof PersonName) {
+        if (!$constraint instanceof Taille) {
             throw new UnexpectedTypeException($constraint, __NAMESPACE__.'\Taille');
         }
 
