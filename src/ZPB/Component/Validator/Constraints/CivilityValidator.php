@@ -21,7 +21,7 @@ class CivilityValidator extends ConstraintValidator
 
         $value = trim($value);
 
-        if(false == preg_match('/m\.?|mr\.?|mme\.?|mlle\.?|me\.?|pr\.?|dr\.?/i', $value)){
+        if($value != null && false == preg_match('/m\.?|mr\.?|mme\.?|mlle\.?|me\.?|pr\.?|dr\.?/i', $value)){
             $this->context->addViolation($constraint->message);
         }
 

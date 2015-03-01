@@ -35,7 +35,7 @@ class TelMobileValidator  extends ConstraintValidator
             throw new UnexpectedTypeException($constraint, __NAMESPACE__.'\TelMobile');
         }
 
-        if(!preg_match($this->pattern,$value)){
+        if($value != null && !preg_match($this->pattern,$value)){
             $this->context->addViolation($constraint->message);
         }
     }

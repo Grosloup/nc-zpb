@@ -34,7 +34,7 @@ class TailleValidator extends ConstraintValidator
             throw new UnexpectedTypeException($constraint, __NAMESPACE__.'\Taille');
         }
 
-        if(!preg_match('/^no|xs|s|m|l|xl|xxl$/i',$value)){
+        if($value != null && !preg_match('/^no|xs|s|m|l|xl|xxl$/i',$value)){
             $this->context->addViolation($constraint->message);
         }
     }

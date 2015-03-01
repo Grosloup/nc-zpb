@@ -34,7 +34,7 @@ class SexValidator extends ConstraintValidator
             throw new UnexpectedTypeException($constraint, __NAMESPACE__.'\Sex');
         }
 
-        if(!preg_match($this->pattern,$value)){
+        if($value != null && !preg_match($this->pattern,$value)){
             $this->context->addViolation($constraint->message);
         }
     }
